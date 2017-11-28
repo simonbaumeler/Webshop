@@ -1,0 +1,29 @@
+﻿{
+  "products": [
+    {
+      "name": "Domenic Helfenstein",
+      "price": "99.99",
+      "description": "Fleissiger Lehrer mit Humor",
+      "particularity": "Lehrerausbildung" 
+    },
+    {
+      "name": "Jonathan Winter",
+      "price": "39.99",
+      "description": "Machmal eingebildet, Gott",
+      "particularity": "Komischer Kleidergeschmack"
+    },
+    {
+      "name": "Micha Frei",
+      "price": "49.99",
+      "description": "Brillenträger",
+      "particularity": "Aggresiv"
+    },
+    {
+      "name": "Thomas Gassmann",
+      "price": "49.99",
+      "description": "Introvertiertes Genie",
+      "particularity": "He is a dank engine"
+    }
+  ]
+}
+
