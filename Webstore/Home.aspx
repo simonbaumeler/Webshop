@@ -9,9 +9,18 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:ListBox ID="LstBxProducts" runat="server">
-                
-            </asp:ListBox>
+            <asp:Label ID="LblTitle" runat="server" Text="BBZW Sursee Store"></asp:Label>
+                <div>
+                    <asp:ListView ID="LstVwProducts" runat="server">
+                        <ItemTemplate>
+                            <asp:Image CssClass="Img" runat="server" ImageUrl='<%#Eval("ImagePath")%>'/>
+                            <asp:Label CssClass="LblName" runat="server" Text='<%#Eval("Name")%>'/>
+                            <asp:Label CssClass="LblDescription" runat="server" Text='<%#Eval("Description")%>'/>
+                            <asp:Label CssClass="LblParticularity" runat="server" Text='<%#Eval("Particularity")%>'/>
+                            <asp:Label CssClass="LblPrice" runat="server" Text='<%#Eval("Price")%>' />
+                        </ItemTemplate>
+                    </asp:ListView>
+                </div>
         </div>
     </form>
 </body>

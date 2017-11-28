@@ -1,29 +1,32 @@
-﻿{
-  "products": [
+﻿[
     {
       "name": "Domenic Helfenstein",
       "price": "99.99",
       "description": "Fleissiger Lehrer mit Humor",
-      "particularity": "Lehrerausbildung" 
+      "Particularity": "Lehrerausbildung",
+      "ImagePath": ".\\assets\\img\\dh.jpg"
     },
-    {
-      "name": "Jonathan Winter",
-      "price": "39.99",
-      "description": "Machmal eingebildet, Gott",
-      "particularity": "Komischer Kleidergeschmack"
-    },
-    {
-      "name": "Micha Frei",
-      "price": "49.99",
-      "description": "Brillenträger",
-      "particularity": "Aggresiv"
-    },
-    {
-      "name": "Thomas Gassmann",
-      "price": "49.99",
-      "description": "Introvertiertes Genie",
-      "particularity": "He is a dank engine"
-    }
+  {
+    "name": "Jonathan Winter",
+    "price": "39.99",
+    "description": "Machmal eingebildet, Gott",
+    "Particularity": "Komischer Kleidergeschmack",
+    "ImagePath": ".\\assets\\img\\jw.jpg"
+  },
+  {
+    "name": "Micha Frei",
+    "price": "49.99",
+    "description": "Brillenträger",
+    "Particularity": "Aggresiv",
+    "ImagePath": ".\\assets\\img\\mf.jpg"
+  },
+  {
+    "name": "Thomas Gassmann",
+    "price": "49.99",
+    "description": "Introvertiertes Genie",
+    "Particularity": "He is a dank engine",
+    "ImagePath": ".\\assets\\img\\tg.jpg"
+  }
   ]
-}
+
 
