@@ -11,8 +11,8 @@ namespace Webstore
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LstVwProducts.DataSource = new Product().LoadProducts();
-            LstVwProducts.DataBind();
+            LstVwProductsHome.DataSource = new Product().LoadProducts();
+            LstVwProductsHome.DataBind();
         }
     }
 }

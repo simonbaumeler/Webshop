@@ -10,15 +10,15 @@
 namespace Webstore {
     
     
-    public partial class Home {
+    public partial class Details {
         
         /// <summary>
-        /// LstVwProductsHome control.
+        /// LstVwProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView LstVwProductsHome;
+        protected global::System.Web.UI.WebControls.ListView LstVwProduct;
     }
 }

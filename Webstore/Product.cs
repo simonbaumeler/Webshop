@@ -39,5 +39,10 @@ namespace Webstore
                 return JsonConvert.DeserializeObject<List<Product>>(json);
             }
         }
+
+        public Product GetProductByName(string name)
+        {
+            return LoadProducts().First(x => x.Name == name);
+        }
     }
 }

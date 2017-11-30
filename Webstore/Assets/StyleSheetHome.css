@@ -52,3 +52,37 @@
     transition: all ease-out 0.5s;
 }
 
+.DivProduct {
+    width: 100%;
+    height: 100%
+}
+
+#textdiv {
+    height: 100%;
+    width: 49%;
+    display: inline-block;
+}
+
+#imgDiv {
+    height: 100%;
+    width: 49%;
+    display: inline-block;
+}
+
+.DetailsImg {
+    height: 384px;
+    width: 288px;
+    margin-right: 10px;
+    margin-left: auto;
+    display: block;
+}
+
+.DetailsLbl {
+    font-size: 40px;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    
+}
+

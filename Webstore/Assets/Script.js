@@ -1,3 +1,4 @@
-﻿function Details() {
-    return document.getElementById() + (newPrice * 0.2);
+﻿function Details(productname) {
+    window.location.href = "Details.aspx";
+    document.getElementById("Page_Load").click();
 }
