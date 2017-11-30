@@ -1,0 +1,19 @@
+﻿#LblTitle {
+    font-size: 40px;
+}
+
+.Img {
+    width: 180px;
+    height: 240px;
+    align-content: center;
+}
+
+.DivProduct {
+    width: 49%;
+    display: inline-block;
+}
+
+.lbl {
+    font-size: 100px;
+    display: block;
+}

@@ -74,6 +74,7 @@
     <Content Include="Assets\Img\jw.jpg" />
     <Content Include="Assets\Img\mf.jpg" />
     <Content Include="Assets\Img\tg.jpg" />
+    <Content Include="Assets\StyleSheetHome.css" />
     <Content Include="Products.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
