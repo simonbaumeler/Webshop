@@ -13,7 +13,8 @@
                         <asp:Label Cssclass="DetailsLblDescription DetailsLbl" runat="server" Text='<%#Eval("Description")%>'/>
                         <asp:Label CssClass="DetailsLblParticularity DetailsLbl" runat="server" Text='<%#Eval("Particularity")%>'/>
                         <asp:Label CssClass="DetailsLblOldPrice DetailsLbl" runat="server" Text='<%#Eval("Price") + " CHF" + " statt " + Eval("OldPrice") + " CHF"%>' ></asp:Label>
-                    </div>
+                        <asp:ImageButton ID="AddItemToCart" runat="server" ImageUrl="Assets/Img/ic_add_shopping_cart_black_24dp_2x.png" OnClick="LoadCartViewWithNewItem('<%#Eval("ID")%>')" />
+                    </div>                  
                 </div>
             </ItemTemplate>
         </asp:ListView>

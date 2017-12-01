@@ -4,7 +4,7 @@
     <div>
         <asp:ListView ID="LstVwProductsHome" runat="server">
             <ItemTemplate>
-                <div class="DivProduct" onclick="Details('<%#Eval("Name")%>')">
+                <div class="DivProduct" onclick="Details('<%#Eval("ID")%>')">
                     <asp:Image class="Img" runat="server" ImageUrl='<%#Eval("ImagePath")%>'/>
                     <asp:Label Cssclass="LblName Lbl" runat="server" Text='<%#Eval("Name")%>'/>
                     <asp:Label CssClass="LblPrice Lbl" runat="server" Text='<%#Eval("Price") + " CHF"%>' />

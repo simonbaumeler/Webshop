@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Globalization;
 using System.IO;
 using Newtonsoft.Json;
 using System.Linq;
-using System.Web;
 
 
 namespace Webstore
 {
     public class Product
     {
+        public int ID { get; set; }
+
         public string Name { get; set; }
 
         public decimal Price { get; set; }
@@ -40,9 +40,21 @@ namespace Webstore
             }
         }
 
-        public Product GetProductByName(string name)
+        public Product GetProductByName(int ID)
         {
-            return LoadProducts().First(x => x.Name == name);
+            return LoadProducts().First(x => x.ID == ID);
+        }
+
+        public List<Product> GetCartProducts(List<int> idList)
+        {
+            var products = new List<Product>();
+
+            foreach (var id in idList)
+            {
+                products.Add(LoadProducts().First(x => x.ID == id));
+            }
+
+            return products;
         }
     }
 }

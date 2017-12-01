@@ -11,6 +11,7 @@
 <body >
 <form id="form1" runat="server">
     <asp:Label ID="LblTitle" runat="server" Text="Buy A Human"></asp:Label>
+    <asp:ImageButton ID="BtnShoppingCart" runat="server" ImageUrl="Assets/Img/ic_shopping_cart_black_24dp_2x - Empty.png" />
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

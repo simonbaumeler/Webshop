@@ -1,12 +1,14 @@
 ﻿[
-    {
-      "name": "Domenic Helfenstein",
-      "price": "99.99",
-      "description": "Fleissiger Lehrer mit Humor",
-      "Particularity": "Lehrerausbildung",
-      "ImagePath": ".\\assets\\img\\dh.jpg"
-    },
   {
+    "id":  "1",
+    "name": "Domenic Helfenstein",
+    "price": "99.99",
+    "description": "Fleissiger Lehrer mit Humor",
+    "Particularity": "Lehrerausbildung",
+    "ImagePath": ".\\assets\\img\\dh.jpg"
+  },
+  {
+    "id": "2",
     "name": "Jonathan Winter",
     "price": "39.99",
     "description": "Machmal eingebildet, Gott",
@@ -14,6 +16,7 @@
     "ImagePath": ".\\assets\\img\\jw.jpg"
   },
   {
+    "id": "3",
     "name": "Micha Frei",
     "price": "49.99",
     "description": "Brillenträger",
@@ -21,6 +24,7 @@
     "ImagePath": ".\\assets\\img\\mf.jpg"
   },
   {
+    "id": "4",
     "name": "Thomas Gassmann",
     "price": "49.99",
     "description": "Introvertiertes Genie",
