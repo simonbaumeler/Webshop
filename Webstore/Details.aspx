@@ -12,7 +12,7 @@
                         <asp:Label Cssclass="DetailsLblName DetailsLbl" runat="server" Text='<%#Eval("Name")%>'/>
                         <asp:Label Cssclass="DetailsLblDescription DetailsLbl" runat="server" Text='<%#Eval("Description")%>'/>
                         <asp:Label CssClass="DetailsLblParticularity DetailsLbl" runat="server" Text='<%#Eval("Particularity")%>'/>
-                        <asp:Label CssClass="DetailsLblOldPrice DetailsLbl" runat="server" Text='<%#Eval("OldPrice") + " CHF" + " statt " + Eval("Price") + " CHF"%>' ></asp:Label>
+                        <asp:Label CssClass="DetailsLblOldPrice DetailsLbl" runat="server" Text='<%#Eval("Price") + " CHF" + " statt " + Eval("OldPrice") + " CHF"%>' ></asp:Label>
                     </div>
                 </div>
             </ItemTemplate>

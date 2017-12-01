@@ -7,7 +7,7 @@ namespace Webstore
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LstVwProduct.DataSource = new List<Product> { new Product().GetProductByName("Micha Frei") };
+            LstVwProduct.DataSource = new List<Product> { new Product().GetProductByName(Request.QueryString["name"]) };
             LstVwProduct.DataBind();
         }
     }
