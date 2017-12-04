@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" MasterPageFile="Site1.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="Webstore.Details"%>
+﻿<%@ Page Language="C#" MasterPageFile="Site1.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="Webstore.Details" EnableEventValidation="false" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <div>
         <asp:ListView ID="LstVwProduct" runat="server">
             <ItemTemplate>
-                <div class="DetailsDivProduct" onclick="Details()">
+                <div class="DetailsDivProduct">
                     <div id="imgDiv">
                         <asp:Image class="DetailsImg" runat="server" ImageUrl='<%#Eval("ImagePath")%>'/>
                     </div>
@@ -13,7 +13,7 @@
                         <asp:Label Cssclass="DetailsLblDescription DetailsLbl" runat="server" Text='<%#Eval("Description")%>'/>
                         <asp:Label CssClass="DetailsLblParticularity DetailsLbl" runat="server" Text='<%#Eval("Particularity")%>'/>
                         <asp:Label CssClass="DetailsLblOldPrice DetailsLbl" runat="server" Text='<%#Eval("Price") + " CHF" + " statt " + Eval("OldPrice") + " CHF"%>' ></asp:Label>
-                        <asp:ImageButton ID="AddItemToCart" runat="server" ImageUrl="Assets/Img/ic_add_shopping_cart_black_24dp_2x.png" OnClick="LoadCartViewWithNewItem('<%#Eval("ID")%>')" />
+                        <asp:ImageButton ID="AddItemToCart" ImageUrl="Assets/Img/ic_add_shopping_cart_black_24dp_2x.png" OnClick="AddItemToCart_OnClick" runat="server" />
                     </div>                  
                 </div>
             </ItemTemplate>

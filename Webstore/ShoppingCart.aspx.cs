@@ -14,9 +14,13 @@ namespace Webstore
             var id = Request.QueryString["id"];
             if (Session["Products"] != null)
             {
+                var parsedId = Convert.ToInt16(id);
                 var products = (List<int>) Session["products"];
-                products.Add(Convert.ToInt16(id));
-                Session["products"] = products;
+                if (products.All(x => x != parsedId))
+                {
+                    products.Add(parsedId);
+                    Session["products"] = products;
+                }
             }
             else
             {
