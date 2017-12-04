@@ -24,7 +24,8 @@
     display: inline-block;
     margin: 5px;
     background: white;
-    border-radius: 10px;    
+    border-radius: 10px;
+    transition: all ease-out 0.5s;
 }
 
 .Lbl {
@@ -49,6 +50,7 @@
 
 .DivProduct:hover {
     background: #00B8D4;
+    border-radius: 0;
     transition: all ease-out 0.5s;
 }
 
@@ -82,14 +84,48 @@
     display: block;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;  
 }
 
 #BtnShoppingCart {
+    transition: all ease-out 0.5s;
     display: block;
     margin-right: 40px;
     margin-left: auto;
     padding-bottom: 10px;
 }
 
+#BtnHome {
+    transition: all ease-out 0.5s;
+    display: block;
+    margin-right: 40px;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+#BtnHome:hover {
+    transform: scale(1.5,1.5)
+}
+
+#BtnShoppingCart:hover {
+    transform: scale(1.5,1.5)
+}
+
+.CartDivProduct {
+    text-align: justify;
+    background: white;
+    margin: 10px 30%;
+    border-radius: 10px;
+    padding: 5px 5px 0 100px;
+    transition: all ease-out 0.5s;
+}
+
+.CartDivProduct:hover {
+    background: #00B8D4;
+    border-radius: 0;
+    transition: all ease-out 0.5s;
+}
+
+.CartLbl {
+    font-size: 22px;
+}

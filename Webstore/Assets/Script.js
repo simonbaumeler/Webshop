@@ -1,5 +1,5 @@
-﻿function LoadCartViewWithNewItem(id) {
-    window.location.href = `ShoppingCart.aspx?ID=${id}`;
+﻿function GoHome() {
+    window.location.href = `Home.aspx`;
 }
 
 function Details(id) {

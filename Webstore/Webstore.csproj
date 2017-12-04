@@ -72,6 +72,7 @@
     <None Include="packages.config" />
     <Content Include="Assets\Img\dh.jpg" />
     <Content Include="Assets\Img\ic_add_shopping_cart_black_24dp_2x.png" />
+    <Content Include="Assets\Img\ic_home_black_24dp_2x.png" />
     <Content Include="Assets\Img\ic_remove_shopping_cart_black_24dp_2x.png" />
     <Content Include="Assets\Img\ic_shopping_cart_black_24dp_2x - Empty.png" />
     <Content Include="Assets\Img\ic_shopping_cart_black_24dp_2x.png" />

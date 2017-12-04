@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Webstore
@@ -29,6 +27,14 @@ namespace Webstore
             }
 
             LstVwProductCart.DataSource = new Product().GetCartProducts((List<int>) Session["Products"]);
+            LstVwProductCart.DataBind();
+        }
+
+        protected void DeleteItemFromCart_OnCommand(object sender, CommandEventArgs e)
+        {
+            var products = (List<int>)Session["products"];
+            products.Remove(products.First(x => x == Convert.ToInt16(e.CommandArgument)));
+            LstVwProductCart.DataSource = new Product().GetCartProducts((List<int>)Session["Products"]);
             LstVwProductCart.DataBind();
         }
     }
